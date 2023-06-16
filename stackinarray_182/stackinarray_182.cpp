@@ -65,7 +65,7 @@ int main() {
 		cout << "2. Pop\n";
 		cout << "3. Display\n";
 		cout << "4. Exit\n";
-		cout << "Chose Your Character: ";
+		cout << "Choose Your Character: ";
 		cin >> ch;
 	}
 }
