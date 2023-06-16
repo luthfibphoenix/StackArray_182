@@ -19,5 +19,12 @@ public:
 			cout << "Number of data exceeds the list." << endl;
 			return 0;
 		}
+
+		top++;
+		stack_array[top] = element; //step3
+		cout << endl;
+		cout << element << "ditambahkan(pushed)" << endl;
+
+		return element;
 	}
 };
