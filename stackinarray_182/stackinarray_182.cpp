@@ -67,5 +67,23 @@ int main() {
 		cout << "4. Exit\n";
 		cout << "Choose Your Character: ";
 		cin >> ch;
+		switch (ch) {
+		case '1': {
+			cout << "\nEnter an Element: ";
+			int element;
+			cin >> element;
+			s.push(element);
+			break;
+		}
+		case '2':
+			if (s.empty()) {
+				cout << "\nStack is Empty." << endl;
+			}
+			s.pop();
+			break;
+		case '3':
+			s.display();
+			break;
+		}
 	}
 }
