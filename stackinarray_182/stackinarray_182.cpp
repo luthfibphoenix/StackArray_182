@@ -14,18 +14,20 @@ public:
 		top = -1;
 	}
 
-	int push(int element) {
-		if (top = 4) { //step 1
+	void push() {
+		cout << "\nEnter an Element: ";
+		int element;
+		cin >> element;
+
+		if (top == 4) { //step 1
 			cout << "Number of data exceeds the list." << endl;
-			return 0;
+			return;
 		}
 
 		top++;
 		stack_array[top] = element; //step3
 		cout << endl;
 		cout << element << "ditambahkan(pushed)" << endl;
-
-		return element;
 	}
 
 	void pop() {
@@ -48,7 +50,7 @@ public:
 			cout << "\nStack is empty." << endl;
 		}
 		else {
-			for (int tmp = 0; tmp <= top; tmp++) {
+			for (int tmp = top; tmp >= 0; tmp--) {
 				cout << stack_array[top] << endl;
 			}
 		}
@@ -69,10 +71,7 @@ int main() {
 		cin >> ch;
 		switch (ch) {
 		case '1': {
-			cout << "\nEnter an Element: ";
-			int element;
-			cin >> element;
-			s.push(element);
+			s.push();
 			break;
 		}
 		case '2':
