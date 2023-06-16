@@ -33,5 +33,13 @@ public:
 			cout << "\nStack is empty. can't pop" << endl; //1.a
 			return ;//1.b
 		}
+
+		cout << "\nThe popped element is: " << stack_array[top] << endl;  //step2
+		top--;//step3 decrement
+	}
+
+	//method for check if data is empty
+	bool empty() {
+		return (top == -1);
 	}
 };
